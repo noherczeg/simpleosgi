@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features name="noherczeg-${project.version}-simpleosgi-service" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+    <feature name="noherczeg-simpleosgi-service" version="${project.version}" description="Simple OSGi Service">
+        <feature>scr</feature>
+        <feature>noherczeg-simpleosgi-api</feature>
+        <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
+    </feature>
+</features>
