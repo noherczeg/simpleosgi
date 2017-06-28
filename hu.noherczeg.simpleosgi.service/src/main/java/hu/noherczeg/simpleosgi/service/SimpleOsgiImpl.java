@@ -1,6 +1,6 @@
-package com.vigilworks.simpleosgi.service;
+package hu.noherczeg.simpleosgi.service;
 
-import com.vigilworks.simpleosgi.api.SimpleOsgi;
+import hu.noherczeg.simpleosgi.api.SimpleOsgi;
 import org.apache.felix.scr.annotations.*;
 import org.osgi.service.component.ComponentContext;
 

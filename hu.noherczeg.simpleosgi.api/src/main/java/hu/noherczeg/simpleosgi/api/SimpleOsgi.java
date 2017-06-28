@@ -1,4 +1,4 @@
-package com.vigilworks.simpleosgi.api;
+package hu.noherczeg.simpleosgi.api;
 
 public interface SimpleOsgi {
     String helloOsgi();

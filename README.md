@@ -14,6 +14,6 @@ karaf clean debug
 
 In Karaf console:
 ```
-install mvn:com.vigilworks/com.vigilworks.simpleosgi.api/1.0.0-SNAPSHOT
-install mvn:com.vigilworks/com.vigilworks.simpleosgi.service/1.0.0-SNAPSHOT
+install mvn:hu.noherczeg/hu.noherczeg.simpleosgi.api/1.0.0-SNAPSHOT
+install mvn:hu.noherczeg/hu.noherczeg.simpleosgi.service/1.0.0-SNAPSHOT
 ```
