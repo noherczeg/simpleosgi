@@ -1,13 +1,11 @@
 # Simple OSGi
 
-## Install
-
-### Build
+## Build
 ```
 mvn clean install
 ```
 
-### Start Karaf
+## Start Karaf
 ```
 karaf clean debug
 ```
@@ -24,35 +22,20 @@ The default username and password is `karaf`.
 
 ## Deployment
 
-### Deploy as bundles
-
-The service bundle requires `scr` to be installed
+The Declarative Services annotations require an implementation to work. Therefore
+we need to install one. The standard is `scr`.
 
 ```
 feature:install scr
 ```
 
-Then we can install our bundles
-
-```
-install mvn:hu.noherczeg/hu.noherczeg.simpleosgi.api/1.0.0-SNAPSHOT
-install mvn:hu.noherczeg/hu.noherczeg.simpleosgi.service/1.0.0-SNAPSHOT
-```
-
-### Deploy as features
-
-Using the "feature" spec we do not need to manually install any dependencies 
-because it's taken care of the features descriptors in the `features` folder 
-of each module.
-
-First we need to register the repository/repositories to our features:
+Then we need to register the repository/repositories to our features:
 ```
 feature:repo-add mvn:hu.noherczeg/hu.noherczeg.simpleosgi.api/1.0.0-SNAPSHOT/xml/features
 feature:repo-add mvn:hu.noherczeg/hu.noherczeg.simpleosgi.service/1.0.0-SNAPSHOT/xml/features
 ```
 
-Then we can install said features (with their configurations, and feature 
-dependencies):
+Lastly we can install said features:
 
 ```
 feature:install noherczeg-simpleosgi-api

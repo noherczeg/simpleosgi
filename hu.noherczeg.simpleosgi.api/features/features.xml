@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<features name="noherczeg-${project.version}-simpleosgi-api" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+<features name="noherczeg-${project.version}-simpleosgi-api" xmlns="http://karaf.apache.org/xmlns/features/v1.3.0">
     <feature name="noherczeg-simpleosgi-api" version="${project.version}" description="Simple OSGi API">
         <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
     </feature>
